@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Confirmed - Justo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f4f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 48px 32px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+    .icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 24px;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #6b7280;
+      line-height: 1.5;
+      margin-bottom: 32px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #00875A;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      transition: background-color 0.2s;
+    }
+    .btn:hover { background-color: #006644; }
+    .hint {
+      font-size: 14px;
+      color: #9ca3af;
+      line-height: 1.5;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: #00875A;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">Justo</div>
+    <div class="icon">&#10003;</div>
+    <h1>Email Confirmed!</h1>
+    <p class="subtitle">Your email has been verified successfully. You can now sign in to your Justo account.</p>
+    <a href="justo://auth/callback" class="btn">Open Justo App</a>
+    <p class="hint">If the button doesn't work, open the Justo app on your phone and sign in with your email and password.</p>
+  </div>
+
+  <script>
+    // Try to auto-open the app on the same device
+    setTimeout(function() {
+      window.location.href = 'justo://auth/callback';
+    }, 500);
+  </script>
+</body>
+</html>
