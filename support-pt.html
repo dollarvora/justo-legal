@@ -4,47 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justo - Suporte</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
-        h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a1a; }
-        h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a1a1a; }
-        p, ul { margin-bottom: 16px; }
-        ul { padding-left: 24px; }
-        .updated { font-size: 14px; color: #666; margin-bottom: 24px; }
-        a { color: #007AFF; }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Suporte do Justo</h1>
-    <p class="updated">Última atualização: Fevereiro de 2026</p>
 
-    <h2>Fale Conosco</h2>
-    <p>Para dúvidas, sugestões ou problemas, envie um e-mail para <a href="mailto:support@justo-app.com">support@justo-app.com</a>. Nosso objetivo é responder em até 48 horas.</p>
+    <!-- Nav -->
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Justo<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="privacy-policy-pt.html">Privacidade</a></li>
+            <li><a href="terms-of-service-pt.html">Termos</a></li>
+            <li><a href="support-pt.html" class="active">Suporte</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" aria-label="Selecionar idioma">PT</button>
+            <div class="lang-dropdown">
+                <a href="support.html">English</a>
+                <a href="support-pt.html" class="current">Portugu&ecirc;s</a>
+                <a href="support-es.html">Espa&ntilde;ol</a>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Problemas com a Conta</h2>
-    <ul>
-        <li><strong>Não consegue entrar?</strong> Tente redefinir sua senha na tela de login. Se o problema persistir, envie-nos um e-mail.</li>
-        <li><strong>Excluir minha conta:</strong> Vá em Configurações &gt; Excluir Minha Conta. Todos os seus dados serão permanentemente removidos em até 30 dias.</li>
-        <li><strong>Exportar meus dados:</strong> Vá em Configurações &gt; Exportar Meus Dados para baixar uma cópia de todas as suas informações.</li>
-    </ul>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">In&iacute;cio</a><span>&rsaquo;</span>Suporte
+    </div>
 
-    <h2>Relatar Preços</h2>
-    <ul>
-        <li>Relate apenas preços que você observou pessoalmente.</li>
-        <li>Inclua o nome do estabelecimento e o item para comparações precisas.</li>
-        <li>Fotos são opcionais, mas ajudam a comunidade — rostos são automaticamente desfocados.</li>
-    </ul>
+    <!-- Mobile TOC Toggle -->
+    <button class="toc-mobile-toggle">&#9776;  &Iacute;ndice</button>
 
-    <h2>Privacidade e Termos</h2>
-    <p>Leia nossa <a href="privacy-policy-pt.html">Política de Privacidade</a> e os <a href="terms-of-service-pt.html">Termos de Serviço</a> para mais detalhes sobre como tratamos seus dados e o que esperamos dos usuários.</p>
+    <!-- Page Layout -->
+    <div class="page-layout">
 
-    <h2>Números de Emergência</h2>
-    <p>O Justo NÃO é um serviço de emergência. Se você estiver em perigo, entre em contato com as autoridades locais:</p>
-    <ul>
-        <li><strong>190</strong> — Polícia Militar</li>
-        <li><strong>192</strong> — SAMU (Ambulância)</li>
-        <li><strong>193</strong> — Bombeiros</li>
-    </ul>
+        <!-- TOC Sidebar -->
+        <aside class="toc-sidebar">
+            <h4>Nesta p&aacute;gina</h4>
+            <ul></ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Suporte do Justo</h1>
+            <div class="updated-badge">&Uacute;ltima atualiza&ccedil;&atilde;o: Fevereiro de 2026</div>
+
+            <section id="fale-conosco">
+                <h2 id="fale-conosco">Fale Conosco</h2>
+                <p>Para d&uacute;vidas, sugest&otilde;es ou problemas, envie um e-mail para <a href="mailto:support@justo-app.com">support@justo-app.com</a>. Nosso objetivo &eacute; responder em at&eacute; 48 horas.</p>
+            </section>
+
+            <section id="problemas-com-a-conta">
+                <h2 id="problemas-com-a-conta">Problemas com a Conta</h2>
+
+                <details>
+                    <summary>N&atilde;o consegue entrar?</summary>
+                    <div class="accordion-body">
+                        <p>Tente redefinir sua senha na tela de login. Se o problema persistir, envie-nos um e-mail.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Excluir minha conta</summary>
+                    <div class="accordion-body">
+                        <p>V&aacute; em Configura&ccedil;&otilde;es &gt; Excluir Minha Conta. Todos os seus dados ser&atilde;o permanentemente removidos em at&eacute; 30 dias.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Exportar meus dados</summary>
+                    <div class="accordion-body">
+                        <p>V&aacute; em Configura&ccedil;&otilde;es &gt; Exportar Meus Dados para baixar uma c&oacute;pia de todas as suas informa&ccedil;&otilde;es.</p>
+                    </div>
+                </details>
+            </section>
+
+            <section id="relatar-precos">
+                <h2 id="relatar-precos">Relatar Pre&ccedil;os</h2>
+                <ul>
+                    <li>Relate apenas pre&ccedil;os que voc&ecirc; observou pessoalmente.</li>
+                    <li>Inclua o nome do estabelecimento e o item para compara&ccedil;&otilde;es precisas.</li>
+                    <li>Fotos s&atilde;o opcionais, mas ajudam a comunidade — rostos s&atilde;o automaticamente desfocados.</li>
+                </ul>
+            </section>
+
+            <section id="privacidade-e-termos">
+                <h2 id="privacidade-e-termos">Privacidade e Termos</h2>
+                <p>Leia nossa <a href="privacy-policy-pt.html">Pol&iacute;tica de Privacidade</a> e os <a href="terms-of-service-pt.html">Termos de Servi&ccedil;o</a> para mais detalhes sobre como tratamos seus dados e o que esperamos dos usu&aacute;rios.</p>
+            </section>
+
+            <section id="numeros-de-emergencia">
+                <h2 id="numeros-de-emergencia">N&uacute;meros de Emerg&ecirc;ncia</h2>
+                <p>O Justo N&Atilde;O &eacute; um servi&ccedil;o de emerg&ecirc;ncia. Se voc&ecirc; estiver em perigo, entre em contato com as autoridades locais:</p>
+                <ul>
+                    <li><strong>190</strong> — Pol&iacute;cia Militar</li>
+                    <li><strong>192</strong> — SAMU (Ambul&acirc;ncia)</li>
+                    <li><strong>193</strong> — Bombeiros</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Voltar ao topo">&uarr;</button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="privacy-policy-pt.html">Pol&iacute;tica de Privacidade</a></li>
+            <li><a href="terms-of-service-pt.html">Termos de Servi&ccedil;o</a></li>
+            <li><a href="support-pt.html">Suporte</a></li>
+        </ul>
+        <p>&copy; 2026 Justo. Todos os direitos reservados.</p>
+        <p class="footer-email">Contato: <a href="mailto:support@justo-app.com">support@justo-app.com</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

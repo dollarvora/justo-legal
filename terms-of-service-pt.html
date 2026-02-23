@@ -3,45 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justo - Termos de Serviço</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
-        h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a1a; }
-        h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a1a1a; }
-        p, ul { margin-bottom: 16px; }
-        ul { padding-left: 24px; }
-        .updated { font-size: 14px; color: #666; margin-bottom: 24px; }
-        a { color: #007AFF; }
-    </style>
+    <title>Justo - Termos de Servi&ccedil;o</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Termos de Serviço do Justo</h1>
-    <p class="updated">Última atualização: Fevereiro de 2026</p>
 
-    <h2>Aceitação</h2>
-    <p>Ao usar o Justo, você concorda com estes Termos de Serviço e nossas Diretrizes da Comunidade. Se você não concordar, não use o aplicativo.</p>
+    <!-- Nav -->
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Justo<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="privacy-policy-pt.html">Privacidade</a></li>
+            <li><a href="terms-of-service-pt.html" class="active">Termos</a></li>
+            <li><a href="support-pt.html">Suporte</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" aria-label="Selecionar idioma">PT</button>
+            <div class="lang-dropdown">
+                <a href="terms-of-service.html">English</a>
+                <a href="terms-of-service-pt.html" class="current">Portugu&ecirc;s</a>
+                <a href="terms-of-service-es.html">Espa&ntilde;ol</a>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Finalidade</h2>
-    <p>O Justo é uma ferramenta de conscientização para turistas, voltada à comparação de preços e ao compartilhamento de informações de segurança no Rio de Janeiro. NÃO é uma plataforma de denúncia de crimes nem um serviço de emergência. Em caso de emergência, ligue para 190 (polícia) ou 192 (ambulância).</p>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">In&iacute;cio</a><span>&rsaquo;</span>Termos de Servi&ccedil;o
+    </div>
 
-    <h2>Responsabilidades do Usuário</h2>
-    <p>Você concorda em:</p>
-    <ul>
-        <li>Relatar apenas preços que você realmente observou</li>
-        <li>Descrever eventos, não indivíduos</li>
-        <li>Não enviar fotos que identifiquem pessoas (rostos são desfocados automaticamente)</li>
-        <li>Não enviar informações falsas ou enganosas</li>
-        <li>Cumprir a legislação brasileira, incluindo a LGPD e o Código Penal Art. 138-140 (difamação)</li>
-    </ul>
+    <!-- Mobile TOC Toggle -->
+    <button class="toc-mobile-toggle">&#9776;  &Iacute;ndice</button>
 
-    <h2>Moderação de Conteúdo</h2>
-    <p>O Justo utiliza moderação automatizada e comunitária. Conteúdos que contenham descrições físicas de indivíduos, informações de contato pessoal, discurso de ódio ou informações falsas podem ser sinalizados ou removidos. Violações repetidas podem resultar em suspensão da conta.</p>
+    <!-- Page Layout -->
+    <div class="page-layout">
 
-    <h2>Limitação de Responsabilidade</h2>
-    <p>O Justo fornece informações de origem comunitária no estado em que se encontram. Não garantimos a precisão de preços, relatos de segurança ou qualquer outro conteúdo enviado por usuários. Sempre use seu próprio julgamento e siga as orientações das autoridades locais.</p>
+        <!-- TOC Sidebar -->
+        <aside class="toc-sidebar">
+            <h4>Nesta p&aacute;gina</h4>
+            <ul></ul>
+        </aside>
 
-    <h2>Encerramento de Conta</h2>
-    <p>Podemos suspender ou encerrar contas que violem estes termos. Você pode excluir sua conta a qualquer momento, o que remove permanentemente todos os seus dados conforme os requisitos da LGPD.</p>
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Termos de Servi&ccedil;o do Justo</h1>
+            <div class="updated-badge">&Uacute;ltima atualiza&ccedil;&atilde;o: Fevereiro de 2026</div>
+
+            <section id="aceitacao">
+                <h2 id="aceitacao">Aceita&ccedil;&atilde;o</h2>
+                <p>Ao usar o Justo, voc&ecirc; concorda com estes Termos de Servi&ccedil;o e nossas Diretrizes da Comunidade. Se voc&ecirc; n&atilde;o concordar, n&atilde;o use o aplicativo.</p>
+            </section>
+
+            <section id="finalidade">
+                <h2 id="finalidade">Finalidade</h2>
+                <p>O Justo &eacute; uma ferramenta de conscientiza&ccedil;&atilde;o para turistas, voltada &agrave; compara&ccedil;&atilde;o de pre&ccedil;os e ao compartilhamento de informa&ccedil;&otilde;es de seguran&ccedil;a no Rio de Janeiro. N&Atilde;O &eacute; uma plataforma de den&uacute;ncia de crimes nem um servi&ccedil;o de emerg&ecirc;ncia. Em caso de emerg&ecirc;ncia, ligue para 190 (pol&iacute;cia) ou 192 (ambul&acirc;ncia).</p>
+            </section>
+
+            <section id="responsabilidades-do-usuario">
+                <h2 id="responsabilidades-do-usuario">Responsabilidades do Usu&aacute;rio</h2>
+                <p>Voc&ecirc; concorda em:</p>
+                <ul>
+                    <li>Relatar apenas pre&ccedil;os que voc&ecirc; realmente observou</li>
+                    <li>Descrever eventos, n&atilde;o indiv&iacute;duos</li>
+                    <li>N&atilde;o enviar fotos que identifiquem pessoas (rostos s&atilde;o desfocados automaticamente)</li>
+                    <li>N&atilde;o enviar informa&ccedil;&otilde;es falsas ou enganosas</li>
+                    <li>Cumprir a legisla&ccedil;&atilde;o brasileira, incluindo a LGPD e o C&oacute;digo Penal Art. 138-140 (difama&ccedil;&atilde;o)</li>
+                </ul>
+            </section>
+
+            <section id="moderacao-de-conteudo">
+                <h2 id="moderacao-de-conteudo">Modera&ccedil;&atilde;o de Conte&uacute;do</h2>
+                <p>O Justo utiliza modera&ccedil;&atilde;o automatizada e comunit&aacute;ria. Conte&uacute;dos que contenham descri&ccedil;&otilde;es f&iacute;sicas de indiv&iacute;duos, informa&ccedil;&otilde;es de contato pessoal, discurso de &oacute;dio ou informa&ccedil;&otilde;es falsas podem ser sinalizados ou removidos. Viola&ccedil;&otilde;es repetidas podem resultar em suspens&atilde;o da conta.</p>
+            </section>
+
+            <section id="limitacao-de-responsabilidade">
+                <h2 id="limitacao-de-responsabilidade">Limita&ccedil;&atilde;o de Responsabilidade</h2>
+                <p>O Justo fornece informa&ccedil;&otilde;es de origem comunit&aacute;ria no estado em que se encontram. N&atilde;o garantimos a precis&atilde;o de pre&ccedil;os, relatos de seguran&ccedil;a ou qualquer outro conte&uacute;do enviado por usu&aacute;rios. Sempre use seu pr&oacute;prio julgamento e siga as orienta&ccedil;&otilde;es das autoridades locais.</p>
+            </section>
+
+            <section id="encerramento-de-conta">
+                <h2 id="encerramento-de-conta">Encerramento de Conta</h2>
+                <p>Podemos suspender ou encerrar contas que violem estes termos. Voc&ecirc; pode excluir sua conta a qualquer momento, o que remove permanentemente todos os seus dados conforme os requisitos da LGPD.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Voltar ao topo">&uarr;</button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="privacy-policy-pt.html">Pol&iacute;tica de Privacidade</a></li>
+            <li><a href="terms-of-service-pt.html">Termos de Servi&ccedil;o</a></li>
+            <li><a href="support-pt.html">Suporte</a></li>
+        </ul>
+        <p>&copy; 2026 Justo. Todos os direitos reservados.</p>
+        <p class="footer-email">Contato: <a href="mailto:support@justo-app.com">support@justo-app.com</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

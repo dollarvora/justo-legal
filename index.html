@@ -4,41 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justo - Legal</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
-        h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a1a; }
-        h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a1a1a; }
-        p { margin-bottom: 16px; }
-        ul { list-style: none; padding: 0; margin-bottom: 16px; }
-        ul li { margin-bottom: 8px; }
-        .updated { font-size: 14px; color: #666; margin-bottom: 24px; }
-        a { color: #007AFF; }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Justo Legal</h1>
-    <p class="updated">Fair prices for everyone in Rio de Janeiro</p>
 
-    <h2>English</h2>
-    <ul>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-service.html">Terms of Service</a></li>
-        <li><a href="support.html">Support</a></li>
-    </ul>
+    <!-- Nav -->
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Justo<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="privacy-policy.html">Privacy</a></li>
+            <li><a href="terms-of-service.html">Terms</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" aria-label="Select language">EN</button>
+            <div class="lang-dropdown">
+                <a href="index.html" class="current">English</a>
+                <a href="index.html">Portugu&ecirc;s</a>
+                <a href="index.html">Espa&ntilde;ol</a>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Portugues</h2>
-    <ul>
-        <li><a href="privacy-policy-pt.html">Politica de Privacidade</a></li>
-        <li><a href="terms-of-service-pt.html">Termos de Servico</a></li>
-        <li><a href="support-pt.html">Suporte</a></li>
-    </ul>
+    <!-- Hub Content -->
+    <div class="hub-container">
+        <h1>Justo Legal</h1>
+        <p class="hub-subtitle">Fair prices for everyone in Rio de Janeiro</p>
 
-    <h2>Espanol</h2>
-    <ul>
-        <li><a href="privacy-policy-es.html">Politica de Privacidad</a></li>
-        <li><a href="terms-of-service-es.html">Terminos de Servicio</a></li>
-        <li><a href="support-es.html">Soporte</a></li>
-    </ul>
+        <!-- Privacy Policy Card -->
+        <div class="doc-cards">
+            <div class="doc-card">
+                <h2>Privacy Policy</h2>
+                <p class="card-desc">How we collect, use, and protect your data under LGPD.</p>
+                <div class="card-langs">
+                    <a href="privacy-policy.html">English</a>
+                    <a href="privacy-policy-pt.html">Portugu&ecirc;s</a>
+                    <a href="privacy-policy-es.html">Espa&ntilde;ol</a>
+                </div>
+            </div>
+
+            <!-- Terms of Service Card -->
+            <div class="doc-card">
+                <h2>Terms of Service</h2>
+                <p class="card-desc">Rules, responsibilities, and guidelines for using Justo.</p>
+                <div class="card-langs">
+                    <a href="terms-of-service.html">English</a>
+                    <a href="terms-of-service-pt.html">Portugu&ecirc;s</a>
+                    <a href="terms-of-service-es.html">Espa&ntilde;ol</a>
+                </div>
+            </div>
+
+            <!-- Support Card -->
+            <div class="doc-card">
+                <h2>Support</h2>
+                <p class="card-desc">Get help with your account, reporting, and emergency contacts.</p>
+                <div class="card-langs">
+                    <a href="support.html">English</a>
+                    <a href="support-pt.html">Portugu&ecirc;s</a>
+                    <a href="support-es.html">Espa&ntilde;ol</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+        <p>&copy; 2026 Justo. All rights reserved.</p>
+        <p class="footer-email">Contact: <a href="mailto:support@justo-app.com">support@justo-app.com</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

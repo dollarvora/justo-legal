@@ -4,44 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justo - Terms of Service</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
-        h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a1a; }
-        h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a1a1a; }
-        p, ul { margin-bottom: 16px; }
-        ul { padding-left: 24px; }
-        .updated { font-size: 14px; color: #666; margin-bottom: 24px; }
-        a { color: #007AFF; }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Justo Terms of Service</h1>
-    <p class="updated">Last updated: February 2026</p>
 
-    <h2>Acceptance</h2>
-    <p>By using Justo, you agree to these Terms of Service and our Community Guidelines. If you do not agree, do not use the app.</p>
+    <!-- Nav -->
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Justo<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="privacy-policy.html">Privacy</a></li>
+            <li><a href="terms-of-service.html" class="active">Terms</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" aria-label="Select language">EN</button>
+            <div class="lang-dropdown">
+                <a href="terms-of-service.html" class="current">English</a>
+                <a href="terms-of-service-pt.html">Portugu&ecirc;s</a>
+                <a href="terms-of-service-es.html">Espa&ntilde;ol</a>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Purpose</h2>
-    <p>Justo is a tourist awareness tool for comparing prices and sharing safety information in Rio de Janeiro. It is NOT a crime reporting platform or emergency service. For emergencies, call 190 (police) or 192 (ambulance).</p>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a><span>&rsaquo;</span>Terms of Service
+    </div>
 
-    <h2>User Responsibilities</h2>
-    <p>You agree to:</p>
-    <ul>
-        <li>Report only prices you actually observed</li>
-        <li>Describe events, not individuals</li>
-        <li>Not upload photos that identify people (faces are auto-blurred)</li>
-        <li>Not submit false or misleading information</li>
-        <li>Comply with Brazilian law including LGPD and Penal Code Art. 138-140 (defamation)</li>
-    </ul>
+    <!-- Mobile TOC Toggle -->
+    <button class="toc-mobile-toggle">&#9776;  Table of Contents</button>
 
-    <h2>Content Moderation</h2>
-    <p>Justo uses automated and community-based moderation. Content containing physical descriptions of individuals, personal contact information, hate speech, or false information may be flagged or removed. Repeated violations may result in account suspension.</p>
+    <!-- Page Layout -->
+    <div class="page-layout">
 
-    <h2>Limitation of Liability</h2>
-    <p>Justo provides community-sourced information as-is. We do not guarantee the accuracy of prices, safety reports, or any other user-submitted content. Always exercise personal judgment and follow local authority guidance.</p>
+        <!-- TOC Sidebar -->
+        <aside class="toc-sidebar">
+            <h4>On this page</h4>
+            <ul></ul>
+        </aside>
 
-    <h2>Account Termination</h2>
-    <p>We may suspend or terminate accounts that violate these terms. You may delete your account at any time, which permanently removes all your data per LGPD requirements.</p>
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Justo Terms of Service</h1>
+            <div class="updated-badge">Last updated: February 2026</div>
+
+            <section id="acceptance">
+                <h2 id="acceptance">Acceptance</h2>
+                <p>By using Justo, you agree to these Terms of Service and our Community Guidelines. If you do not agree, do not use the app.</p>
+            </section>
+
+            <section id="purpose">
+                <h2 id="purpose">Purpose</h2>
+                <p>Justo is a tourist awareness tool for comparing prices and sharing safety information in Rio de Janeiro. It is NOT a crime reporting platform or emergency service. For emergencies, call 190 (police) or 192 (ambulance).</p>
+            </section>
+
+            <section id="user-responsibilities">
+                <h2 id="user-responsibilities">User Responsibilities</h2>
+                <p>You agree to:</p>
+                <ul>
+                    <li>Report only prices you actually observed</li>
+                    <li>Describe events, not individuals</li>
+                    <li>Not upload photos that identify people (faces are auto-blurred)</li>
+                    <li>Not submit false or misleading information</li>
+                    <li>Comply with Brazilian law including LGPD and Penal Code Art. 138-140 (defamation)</li>
+                </ul>
+            </section>
+
+            <section id="content-moderation">
+                <h2 id="content-moderation">Content Moderation</h2>
+                <p>Justo uses automated and community-based moderation. Content containing physical descriptions of individuals, personal contact information, hate speech, or false information may be flagged or removed. Repeated violations may result in account suspension.</p>
+            </section>
+
+            <section id="limitation-of-liability">
+                <h2 id="limitation-of-liability">Limitation of Liability</h2>
+                <p>Justo provides community-sourced information as-is. We do not guarantee the accuracy of prices, safety reports, or any other user-submitted content. Always exercise personal judgment and follow local authority guidance.</p>
+            </section>
+
+            <section id="account-termination">
+                <h2 id="account-termination">Account Termination</h2>
+                <p>We may suspend or terminate accounts that violate these terms. You may delete your account at any time, which permanently removes all your data per LGPD requirements.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+        <p>&copy; 2026 Justo. All rights reserved.</p>
+        <p class="footer-email">Contact: <a href="mailto:support@justo-app.com">support@justo-app.com</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

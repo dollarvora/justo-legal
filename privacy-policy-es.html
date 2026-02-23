@@ -3,46 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justo - Política de Privacidad</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
-        h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a1a; }
-        h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a1a1a; }
-        p, ul { margin-bottom: 16px; }
-        ul { padding-left: 24px; }
-        .updated { font-size: 14px; color: #666; margin-bottom: 24px; }
-        a { color: #007AFF; }
-    </style>
+    <title>Justo - Pol&iacute;tica de Privacidad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Política de Privacidad de Justo</h1>
-    <p class="updated">Última actualización: Febrero de 2026</p>
 
-    <h2>Datos que Recopilamos</h2>
-    <p>Justo recopila: dirección de correo electrónico, nombre para mostrar, país de origen, idiomas preferidos, fechas de viaje, datos de ubicación (cuando envías reportes), fotos (con rostros automáticamente difuminados) y tokens de dispositivo para notificaciones push.</p>
+    <!-- Nav -->
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Justo<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="privacy-policy-es.html" class="active">Privacidad</a></li>
+            <li><a href="terms-of-service-es.html">T&eacute;rminos</a></li>
+            <li><a href="support-es.html">Soporte</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" aria-label="Seleccionar idioma">ES</button>
+            <div class="lang-dropdown">
+                <a href="privacy-policy.html">English</a>
+                <a href="privacy-policy-pt.html">Portugu&ecirc;s</a>
+                <a href="privacy-policy-es.html" class="current">Espa&ntilde;ol</a>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Cómo Usamos tus Datos</h2>
-    <p>Tus datos alimentan el mapa comunitario de precios y seguridad. Los datos de ubicación se usan únicamente para colocar reportes en el mapa y calcular alertas cercanas. Nunca vendemos tus datos a terceros.</p>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Inicio</a><span>&rsaquo;</span>Pol&iacute;tica de Privacidad
+    </div>
 
-    <h2>Cumplimiento de la LGPD</h2>
-    <p>Según la Ley General de Protección de Datos de Brasil (LGPD), tienes derecho a:</p>
-    <ul>
-        <li>Acceder a tus datos</li>
-        <li>Corregir inexactitudes</li>
-        <li>Eliminar tu cuenta y todos los datos asociados</li>
-        <li>Exportar tus datos en un formato portátil</li>
-        <li>Revocar el consentimiento en cualquier momento</li>
-    </ul>
-    <p>Usa las opciones "Exportar Mis Datos" y "Eliminar Mi Cuenta" en Configuración.</p>
+    <!-- Mobile TOC Toggle -->
+    <button class="toc-mobile-toggle">&#9776;  &Iacute;ndice</button>
 
-    <h2>Privacidad de Fotos</h2>
-    <p>Todas las fotos subidas son procesadas mediante detección y difuminado automático de rostros (framework Vision). Esto cumple con la CF/88 Art. 5 (X) (derecho a la imagen), Código Civil Art. 20 (derechos de imagen) y LGPD Art. 5/11 (protección de datos biométricos). Las fotos originales sin difuminar nunca se almacenan.</p>
+    <!-- Page Layout -->
+    <div class="page-layout">
 
-    <h2>Retención de Datos</h2>
-    <p>Los reportes se conservan mientras tu cuenta esté activa. Las cuentas eliminadas tienen todos sus datos permanentemente eliminados en un plazo de 30 días. Las estadísticas agregadas y anonimizadas pueden conservarse para la mejora del servicio.</p>
+        <!-- TOC Sidebar -->
+        <aside class="toc-sidebar">
+            <h4>En esta p&aacute;gina</h4>
+            <ul></ul>
+        </aside>
 
-    <h2>Contacto</h2>
-    <p>Para consultas de privacidad: <a href="mailto:privacy@justo-app.com">privacy@justo-app.com</a></p>
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Pol&iacute;tica de Privacidad de Justo</h1>
+            <div class="updated-badge">&Uacute;ltima actualizaci&oacute;n: Febrero de 2026</div>
+
+            <section id="datos-que-recopilamos">
+                <h2 id="datos-que-recopilamos">Datos que Recopilamos</h2>
+                <p>Justo recopila: direcci&oacute;n de correo electr&oacute;nico, nombre para mostrar, pa&iacute;s de origen, idiomas preferidos, fechas de viaje, datos de ubicaci&oacute;n (cuando env&iacute;as reportes), fotos (con rostros autom&aacute;ticamente difuminados) y tokens de dispositivo para notificaciones push.</p>
+            </section>
+
+            <section id="como-usamos-tus-datos">
+                <h2 id="como-usamos-tus-datos">C&oacute;mo Usamos tus Datos</h2>
+                <p>Tus datos alimentan el mapa comunitario de precios y seguridad. Los datos de ubicaci&oacute;n se usan &uacute;nicamente para colocar reportes en el mapa y calcular alertas cercanas. Nunca vendemos tus datos a terceros.</p>
+            </section>
+
+            <section id="cumplimiento-de-la-lgpd">
+                <h2 id="cumplimiento-de-la-lgpd">Cumplimiento de la LGPD</h2>
+                <p>Seg&uacute;n la Ley General de Protecci&oacute;n de Datos de Brasil (LGPD), tienes derecho a:</p>
+                <ul>
+                    <li>Acceder a tus datos</li>
+                    <li>Corregir inexactitudes</li>
+                    <li>Eliminar tu cuenta y todos los datos asociados</li>
+                    <li>Exportar tus datos en un formato port&aacute;til</li>
+                    <li>Revocar el consentimiento en cualquier momento</li>
+                </ul>
+                <p>Usa las opciones &ldquo;Exportar Mis Datos&rdquo; y &ldquo;Eliminar Mi Cuenta&rdquo; en Configuraci&oacute;n.</p>
+            </section>
+
+            <section id="privacidad-de-fotos">
+                <h2 id="privacidad-de-fotos">Privacidad de Fotos</h2>
+                <p>Todas las fotos subidas son procesadas mediante detecci&oacute;n y difuminado autom&aacute;tico de rostros (framework Vision). Esto cumple con la CF/88 Art. 5 (X) (derecho a la imagen), C&oacute;digo Civil Art. 20 (derechos de imagen) y LGPD Art. 5/11 (protecci&oacute;n de datos biom&eacute;tricos). Las fotos originales sin difuminar nunca se almacenan.</p>
+            </section>
+
+            <section id="retencion-de-datos">
+                <h2 id="retencion-de-datos">Retenci&oacute;n de Datos</h2>
+                <p>Los reportes se conservan mientras tu cuenta est&eacute; activa. Las cuentas eliminadas tienen todos sus datos permanentemente eliminados en un plazo de 30 d&iacute;as. Las estad&iacute;sticas agregadas y anonimizadas pueden conservarse para la mejora del servicio.</p>
+            </section>
+
+            <section id="contacto">
+                <h2 id="contacto">Contacto</h2>
+                <p>Para consultas de privacidad: <a href="mailto:privacy@justo-app.com">privacy@justo-app.com</a></p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Volver arriba">&uarr;</button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="privacy-policy-es.html">Pol&iacute;tica de Privacidad</a></li>
+            <li><a href="terms-of-service-es.html">T&eacute;rminos de Servicio</a></li>
+            <li><a href="support-es.html">Soporte</a></li>
+        </ul>
+        <p>&copy; 2026 Justo. Todos los derechos reservados.</p>
+        <p class="footer-email">Contacto: <a href="mailto:privacy@justo-app.com">privacy@justo-app.com</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

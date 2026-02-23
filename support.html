@@ -4,47 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justo - Support</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 24px 16px; background: #fafafa; }
-        h1 { font-size: 28px; margin-bottom: 8px; color: #1a1a1a; }
-        h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a1a1a; }
-        p, ul { margin-bottom: 16px; }
-        ul { padding-left: 24px; }
-        .updated { font-size: 14px; color: #666; margin-bottom: 24px; }
-        a { color: #007AFF; }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Justo Support</h1>
-    <p class="updated">Last updated: February 2026</p>
 
-    <h2>Contact Us</h2>
-    <p>For questions, feedback, or issues, email us at <a href="mailto:support@justo-app.com">support@justo-app.com</a>. We aim to respond within 48 hours.</p>
+    <!-- Nav -->
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">Justo<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="privacy-policy.html">Privacy</a></li>
+            <li><a href="terms-of-service.html">Terms</a></li>
+            <li><a href="support.html" class="active">Support</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" aria-label="Select language">EN</button>
+            <div class="lang-dropdown">
+                <a href="support.html" class="current">English</a>
+                <a href="support-pt.html">Portugu&ecirc;s</a>
+                <a href="support-es.html">Espa&ntilde;ol</a>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Account Issues</h2>
-    <ul>
-        <li><strong>Can't log in?</strong> Try resetting your password from the login screen. If you still have trouble, email us.</li>
-        <li><strong>Delete my account:</strong> Go to Settings &gt; Delete My Account. All your data will be permanently removed within 30 days.</li>
-        <li><strong>Export my data:</strong> Go to Settings &gt; Export My Data to download a copy of all your information.</li>
-    </ul>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a><span>&rsaquo;</span>Support
+    </div>
 
-    <h2>Reporting Prices</h2>
-    <ul>
-        <li>Only report prices you personally observed.</li>
-        <li>Include the venue name and item for accurate comparisons.</li>
-        <li>Photos are optional but help the community — faces are automatically blurred.</li>
-    </ul>
+    <!-- Mobile TOC Toggle -->
+    <button class="toc-mobile-toggle">&#9776;  Table of Contents</button>
 
-    <h2>Privacy &amp; Terms</h2>
-    <p>Read our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-service.html">Terms of Service</a> for full details on how we handle your data and what we expect from users.</p>
+    <!-- Page Layout -->
+    <div class="page-layout">
 
-    <h2>Emergency Numbers</h2>
-    <p>Justo is NOT an emergency service. If you are in danger, contact local authorities:</p>
-    <ul>
-        <li><strong>190</strong> — Police (Polícia Militar)</li>
-        <li><strong>192</strong> — Ambulance (SAMU)</li>
-        <li><strong>193</strong> — Fire Department (Bombeiros)</li>
-    </ul>
+        <!-- TOC Sidebar -->
+        <aside class="toc-sidebar">
+            <h4>On this page</h4>
+            <ul></ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Justo Support</h1>
+            <div class="updated-badge">Last updated: February 2026</div>
+
+            <section id="contact-us">
+                <h2 id="contact-us">Contact Us</h2>
+                <p>For questions, feedback, or issues, email us at <a href="mailto:support@justo-app.com">support@justo-app.com</a>. We aim to respond within 48 hours.</p>
+            </section>
+
+            <section id="account-issues">
+                <h2 id="account-issues">Account Issues</h2>
+
+                <details>
+                    <summary>Can't log in?</summary>
+                    <div class="accordion-body">
+                        <p>Try resetting your password from the login screen. If you still have trouble, email us.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Delete my account</summary>
+                    <div class="accordion-body">
+                        <p>Go to Settings &gt; Delete My Account. All your data will be permanently removed within 30 days.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Export my data</summary>
+                    <div class="accordion-body">
+                        <p>Go to Settings &gt; Export My Data to download a copy of all your information.</p>
+                    </div>
+                </details>
+            </section>
+
+            <section id="reporting-prices">
+                <h2 id="reporting-prices">Reporting Prices</h2>
+                <ul>
+                    <li>Only report prices you personally observed.</li>
+                    <li>Include the venue name and item for accurate comparisons.</li>
+                    <li>Photos are optional but help the community — faces are automatically blurred.</li>
+                </ul>
+            </section>
+
+            <section id="privacy-terms">
+                <h2 id="privacy-terms">Privacy &amp; Terms</h2>
+                <p>Read our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-service.html">Terms of Service</a> for full details on how we handle your data and what we expect from users.</p>
+            </section>
+
+            <section id="emergency-numbers">
+                <h2 id="emergency-numbers">Emergency Numbers</h2>
+                <p>Justo is NOT an emergency service. If you are in danger, contact local authorities:</p>
+                <ul>
+                    <li><strong>190</strong> — Police (Pol&iacute;cia Militar)</li>
+                    <li><strong>192</strong> — Ambulance (SAMU)</li>
+                    <li><strong>193</strong> — Fire Department (Bombeiros)</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+        <p>&copy; 2026 Justo. All rights reserved.</p>
+        <p class="footer-email">Contact: <a href="mailto:support@justo-app.com">support@justo-app.com</a></p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
