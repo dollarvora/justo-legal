@@ -180,8 +180,8 @@
 
   <section class="hero" id="hero">
     <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero_poster.jpg" aria-hidden="true">
-      <source src="assets/video/hero.webm" type="video/webm">
       <source src="assets/video/hero.mp4" type="video/mp4">
+      <source src="assets/video/hero.webm" type="video/webm">
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -591,6 +591,20 @@
 
     // ── Init ──────────────────────────────────────────────────────
     document.addEventListener('DOMContentLoaded', () => {
+      // Force video play on mobile Safari
+      const heroVideo = document.querySelector('.hero-video');
+      if (heroVideo) {
+        heroVideo.play().catch(function(error) {
+          console.log('Autoplay blocked:', error);
+        });
+      }
+
+      // Also try on first user interaction (Safari sometimes needs this)
+      document.addEventListener('touchstart', function() {
+        const v = document.querySelector('.hero-video');
+        if (v && v.paused) v.play().catch(function() {});
+      }, { once: true });
+
       // Language
       const lang = detectLang();
       setLang(lang);
